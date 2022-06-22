@@ -23,11 +23,4 @@ router.register('StudentViewSet', views.StudentViewSet, basename="student")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('student_list',include("testing.urls")),
-    path('getall/', views.StudentList.as_view()),
-    path('add/', views.StudentList.as_view()),
-    # path('createstudent/', views.CreateStudent.as_view()),
-    path('getstudent/<int:pk>/', views.GetPutDelete.as_view()),
-    path('deletestudent/<int:pk>/', views.GetPutDelete.as_view()),
-    path('updatestudent/<int:pk>/', views.GetPutDelete.as_view()),
 ]+router.urls
